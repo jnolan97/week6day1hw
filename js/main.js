@@ -3,13 +3,12 @@
 function findWords(){
     let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
     let dog_names = ["Max","HAS","PuRple","dog"]
-    for (i = 0; i< dog_names.length;i++){
-        for(j = 0; j<dog_string.length;j++){
-            if(i == j){
-                console.log("Matched name")
-            } else{
-                console.log('No matches')
-            }
+    dog_string.split(" ")
+    for (i = 0; i< dog_string.length;i++){
+        if(dog_names.includes(dog_string[i])){
+            console.log('Matched name')
+        } else{
+            console.log('No matches')
         }
     }
 }
